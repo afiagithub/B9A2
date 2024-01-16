@@ -13,6 +13,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
@@ -20,8 +21,8 @@
     <header>
         <nav>
             <div class="logo">
-                <img src="Images/Group 40071 (2).png" alt="Logo">
-                <h1>Hero Travel</h1>
+                <i class="fa-solid fa-route"></i>
+                <h1>Travel <span class="marked">Haven</span></h1>
             </div>
 
             <div class="navigation">
@@ -38,8 +39,7 @@
         <section class="banner">
             <div class="banner-content">
                 <h1>Explore Your Travel</h1>
-                <p>Dolor sit amet consectetur. Nullam suspendisse vitae ultricies dolor adipiscing. In et odio enim ac
-                    quis sapien urna eu phasellus.</p>
+                <p>Plan your dream holiday with us and we will help you travel beyond boundaries and borders.</p>
                 <div class="planner-section">
                     <input type="text" placeholder="Where go">
                     <select name="week-day" class="dropdown">
@@ -53,7 +53,7 @@
                         <option value="Saturday">Saturday</option>
                     </select>
 
-                    <select name="week-day" class="dropdown">
+                    <select name="trip-type" class="dropdown">
                         <Option class="default">Select Type</Option>
                         <option value="Single">Single</option>
                         <option value="Family">Family</option>
@@ -69,20 +69,21 @@
         <div class="featured-section">
             <div class="feature-content">
                 <h2 class="semi-heading">Our Popular Tours</h2>
-                <p class="para">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                    Sodales dictumst nec nibh pellentesque.</p>
+                <p class="para">If you're looking for popular tours offered by Travel Haven, it would depend on the
+                    location and interests of your target audience. Here's a generic list of popular types of tours that
+                    we offer</p>
                 <ul>
-                    <li class="para">Tempus euismod lacus mauris dignissim quis in ultrices. Magna nullam odio neque
-                        diam. Sociis erat at .</li>
-                    <li class="para">Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus.
-                        Lectus suspendisse nullam</li>
-                    <li class="para"> Accumsan eget et turpis praesent lorem egestas enim elit bibendum. Risus at in.
-                    </li>
+                    <li class="para">Relaxation Tours which includes Beach resort getaways, Spa and wellness retreats
+                        etc.</li>
+                    <li class="para">Adventure Tours which includes Hiking and trekking expeditions, Wildlife safaris
+                        etc.</li>
+                    <li class="para">Family-Friendly Tours which includes Theme park vacations, Family adventure tours
+                        etc.</li>
                 </ul>
 
-                <p class="para">Amet consectetur. Vulputate commodo felis molestie risus
-                    ornare nulla amet et. Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus
-                    natoque aliquet. Id bibendum nunc senectus semper tincidunt. </p>
+                <p class="para">Travel Haven has more than 4000 members all over the country. Our agency has been
+                    playing a vital role for
+                    the smooth development of Aviation & Tourism sector in the country. </p>
                 <button class="btn">Read More</button>
             </div>
             <dib class="feature-image">
@@ -93,8 +94,7 @@
         <div class="dest-section">
             <div class="dest-content">
                 <h2 class="semi-heading">Choose Your Destination</h2>
-                <p class="para">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                    Sodales dictumst nec nibh pellentesque.</p>
+                <p class="para">Discover, Explore, Unwind: Your Journey Begins With Us!</p>
             </div>
             <div class="dest-img-container">
                 <div class="grid-item1">
@@ -128,39 +128,129 @@
             </div>
         </div>
 
+        <div class="activity-section">
+            <div class="activity-heading">
+                <h2 class="semi-heading">Fun Activities</h2>
+                <p class="para">Many travelers seek out destinations that are particularly suited to specific
+                    activities,
+                    such as scuba diving or rock climbing. Our travel plans include various fun and challenging
+                    activities
+                    that'll make your journey memorable</p>
+            </div>
+            <div class="activity-type">
+                <div class="activity-container">
+                    <h1>For Kids</h1>
+                    <div class="activity-content">
+                        <div class="activity-card">
+                            <i class="fa-solid fa-person-biking"></i>
+                            <h4>Biking</h4>
+                        </div>
+                        <div class="activity-card">
+                            <i class="fa-solid fa-campground"></i>
+                            <h4>Camping</h4>
+                        </div>
+                        <div class="activity-card">
+                            <i class="fa-brands fa-searchengin"></i>
+                            <h4>Scavenger hunt</h4>
+                        </div>
+                        <div class="activity-card">
+                            <i class="fa-regular fa-star"></i>
+                            <h4>DIY crafting</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity-container">
+                    <h1>For Adults</h1>
+                    <div class="activity-content">
+                        <div class="activity-card">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <h4>Hiking</h4>
+                        </div>
+                        <div class="activity-card">
+                            <i class="fa-solid fa-water"></i>
+                            <h4>Lake Fishing</h4>
+                        </div>
+                        <div class="activity-card">
+                            <i class="fa-solid fa-person-skating"></i>
+                            <h4>Ice-skating</h4>
+                        </div>
+                        <div class="activity-card">
+                            <i class="fa-solid fa-person-skiing-nordic"></i>
+                            <h4>Skiing</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="service-section">
             <div class="service-content">
                 <h2 class="semi-heading">Why Choose Us</h2>
-                <p class="para">Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra odio sit massa.
-                    Sodales dictumst nec nibh pellentesque.</p>
+                <p class="para">Things don't always go as planned but you can trust us to work for you with the express
+                    aim of retaining your trust.</p>
             </div>
             <div class="service-card">
                 <div class="card">
                     <img src="Images/hotel 1.svg" alt="">
                     <h4>Handpicked Hotels</h4>
-                    <p class="para">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                        Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.
-                    </p>
+                    <p class="para">Romantic road trips, frolicking with friends, exploring with the kids - whatever
+                        your reason to escape the everyday, there is a Hand Picked Hotel for you. A collection of 21
+                        hotels boast captivating vistas, architectural fascination, enthralling
+                        heritage and, most importantly, the outstanding service you expect.</p>
                 </div>
                 <div class="card second-card">
                     <img src="Images/map 1.svg" alt="">
                     <h4>World Class Service</h4>
-                    <p class="para">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                        Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.
-                    </p>
-                </div>                
+                    <p class="para">Our world-class service begins the moment you step through our doors. Indulge in
+                        opulent
+                        accommodations, curated culinary delights, and rejuvenating spa experiences. At Travel Haven, we
+                        redefine luxury with an unwavering commitment to providing you with a truly exceptional and
+                        memorable stay.</p>
+                </div>
             </div>
             <div class="card third-card">
                 <img src="Images/price-tag 1.svg" alt="">
                 <h4>Best Price Guarantee</h4>
-                <p class="para">Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et.
-                    Libero commodo sagittis dignissim adipiscing quis. Habitant adipiscing risus natoque aliquet.
-                </p>
+                <p class="para">We redefine affordability without sacrificing quality. Travel Haven offers modern
+                    amenities, cozy accommodations, and friendly service - all at the best prices.</p>
+            </div>
+        </div>
+
+        <div class="newsletter-section">
+            <div class="newsletter-content">
+                <h4>Newsletter</h4>
+                <p class="para">Get your daily dose of travel news & tips. Sign up today!</p>
+                <input type="text" placeholder="Enter your name">
+                <input type="email" placeholder="Enter your email">
+                <button class="btn">Subscribe</button>
+            </div>
+            <div class="news-img">
+                <img src="Images/Rectangle 8 (1).png" alt="">
+                <div class="small-card">
+                    <p>Travel.com</p>
+                    <h3>Save up to 70%</h3>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-content">
+            <i class="fa-solid fa-route"></i>
+            <h1>Travel <span class="marked">Haven</span></h1>
+            <p class="para">Whether you're a budget-savvy traveler or looking for a cost-effective yet comfortable stay,
+                Travel Haven is your destination for wallet-friendly hospitality without compromising on the
+                experience. </p>
+            <ul>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-github"></i></li>
+            </ul>
+            <hr>
+            <p class="license">2024, All Rights Reserved (Afia Rahman)</p>
+        </div>
+    </footer>
 </body>
 
 </html>

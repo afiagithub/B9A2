@@ -56,10 +56,21 @@ nav h1 {
     display: inline;
     position: relative;
     top: -15px;
-    left: 18px;
+    left: 15px;
     color: #131318;
     font-size: 1.8rem;
     font-weight: 800;
+}
+
+.marked {
+    color: #FF5400;
+}
+
+.fa-route {
+    font-size: 2.5rem;
+    position: relative;
+    bottom: 10px;
+    color: #FF5400;
 }
 
 nav ul {
@@ -79,6 +90,10 @@ nav li a {
     color: #FF5400;
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+nav li a:hover {
+    color: #FF5400;
 }
 
 /* Banner Section CSS */
@@ -140,7 +155,7 @@ nav li a {
     font-size: 1rem;
     font-weight: 400;
     padding-left: 15px;
-    background: #FFFFFF url('../Images/angle-down-solid.svg') no-repeat right center;
+    background: #FFFFFF url('../Images/Frame.svg') no-repeat right center;
     appearance: none;
 }
 
@@ -283,6 +298,61 @@ nav li a {
     left: 39%;
 }
 
+/* activity section CSS */
+.activity-section{
+    margin: 0 102px;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.activity-heading{
+    max-width: 643px;
+    margin: 0 auto;
+}
+
+.activity-type{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.activity-content{
+    border: 2px solid #FF5400;
+    border-radius: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.activity-card{
+    margin: 20px;
+    padding: 30px;
+    background-color: #FF5400;
+    color: #FFF;
+    border-radius: 16px;
+}
+
+.activity-card:hover{
+    background: transparent;
+    border: 2px solid #FF5400;
+    color: #FF5400;
+}
+
+.activity-container h1{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 35px;
+}
+
+.activity-card h4{
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+.activity-type i{
+    font-size: 3rem;
+}
+
 /* service section CSS */
 .service-section {
     margin: 0 102px;
@@ -327,16 +397,150 @@ nav li a {
     margin: 24px auto;
 }
 
+/* newsletter-section CSS */
+.newsletter-section {
+    margin: 0 102px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.newsletter-content {
+    padding: 40px;
+    border-radius: 16px;
+    border: 1px solid #FF5400;
+}
+
+.newsletter-content h4 {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.newsletter-content p {
+    margin-bottom: 48px;
+}
+
+.newsletter-content input {
+    width: 100%;
+    border-radius: 8px;
+    border: none;
+    background: rgba(19, 19, 24, 0.05);
+    color: rgba(19, 19, 24, 0.30);
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.newsletter-content .btn {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.news-img {
+    position: relative;
+}
+
+.small-card {
+    position: absolute;
+    width: 324px;
+    height: 120px;
+    transform: rotate(-19.628deg);
+    border-radius: 16px;
+    background: #FF5400;
+    text-align: center;
+    bottom: 13%;
+    right: 3%;
+}
+
+.small-card p {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 20px;
+}
+
+.small-card h3 {
+    color: #FFF;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Footer CSS */
+.footer-content {
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer-content img {
+    width: 40px;
+    height: 46.673px;
+}
+
+.footer-content p {
+    max-width: 750px;
+    margin: 15px auto;
+    margin-bottom: 30px;
+}
+
+.footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content li {
+    margin-right: 20px;
+}
+
+.footer-content h1 {
+    display: inline;
+    position: relative;
+    top: -15px;
+    left: 15px;
+    color: #131318;
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.footer-content hr {
+    margin: 50px auto;
+    background: rgba(19, 19, 24, 0.15);
+    height: 1px;
+    width: 75%;
+    border: none;
+}
+
+.license {
+    color: #131318;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 /* Responsive CSS */
 @media screen and (max-width:600px) {
 
     nav,
-    nav ul,
     .planner-section,
     .featured-section,
-    .service-card {
+    .service-card,
+    .newsletter-section,
+    .activity-type {
         flex-direction: column;
-        margin: 20px;
+        margin: 20px 0;
+    }
+
+    nav ul{
+        padding: 20px 15px;
+    }
+
+    nav li a {
+        margin-right: 15px;
     }
 
     .featured-section {
@@ -352,7 +556,7 @@ nav li a {
         font-weight: 800;
     }
 
-    .para{
+    .para {
         font-size: 14px;
     }
 
@@ -391,7 +595,7 @@ nav li a {
     }
 
     .dest-section,
-    .service-section {
+    .service-section, .activity-section, .newsletter-section {
         margin: 24px 20px;
     }
 
@@ -425,7 +629,53 @@ nav li a {
         font-weight: 700;
     }
 
+    .activity-card{
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .activity-card h4{
+        margin-top: 15px;
+        font-size: 1rem;
+    }
+    
+    .activity-type i{
+        font-size: 2.5rem;
+    }
+
+    .activity-container h1{
+        margin-bottom: 15px;
+    }
+
     .third-card {
-        width: 92%;
+        width: 98%;
+    }
+
+    .newsletter-content {
+        padding: 24px;
+    }
+
+    .news-img img {
+        width: 100%;
+    }
+
+    .small-card {
+        width: 214.023px;
+        height: 79.268px;
+    }
+
+    .small-card p {
+        font-size: 15.854px;
+        font-weight: 400;
+    }
+
+    .small-card h3 {
+        font-size: 21.138px;
+        font-weight: 800;
+    }
+
+    .footer-content {
+        margin-top: 24px;
+        padding: 33px 44px;
     }
 }
